@@ -1,3 +1,5 @@
+#the inv variable counts the number of inversions. It's a cool exercise to see how many comparisons the computer made.
+
 from random import *
 #inp=open("text.txt", "r").readlines()
 inp=[9, 12, 3, 1, 6, 8, 2, 5, 14, 13, 11, 7, 10, 4, 0]
@@ -9,6 +11,7 @@ def inputing(path):
     global inp
     def mergeSort(array,inv):
         if len(array)<=1:
+            print(array)
             return 0
         else:
             midpoint = len(array)//2
